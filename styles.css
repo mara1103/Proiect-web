@@ -10,6 +10,12 @@ body {
     min-height: 100vh;
     background: linear-gradient(#B8C2FD, #F6E5C9);
     height: 100%;
+    margin:0;
+    padding:0;
+
+}
+html {
+    background: linear-gradient(#B8C2FD, #F6E5C9);
 }
 
 
@@ -21,7 +27,7 @@ body {
     right:0;
     width: 100%;
     background-color: #050E43;
-    padding: 10px 100px;
+    padding: 4px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,17 +66,17 @@ body {
 
 #text {
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
     white-space: nowrap;
-    font-size: 2.5em;
+    font-size: 3em;
     text-shadow: 2px 2px black;
 }
 
 #btn {
-    top: 60%;
+    top: 65%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -81,8 +87,13 @@ body {
     font-size: 1.5em;
 }
 
+    #btn:hover {
+        background: #A86C41;
+        color: white;
+    }
+
 .iframe-container {
-    position: fixed;
+    position: relative;
     width: 100%;
     padding-bottom: 56.25%;
     height: 0;
@@ -95,6 +106,32 @@ body {
 
     }
 
+h2 {
+
+    text-shadow: 2px 2px white;
+    color: #050E43;
+    font-size: 1.5em;
+   
+}
+h3 {
+    color: darkslategray;
+    font-family: Arial;
+    font-size: 1em;
+
+}
+
+hr4 {
+    color: midnightblue;
+    font-family: Arial;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.row{
+    margin-top: 5%;
+    display:flex;
+    justify-content: space-between;
+}
 
 /* Scrollbar */
 
@@ -118,7 +155,32 @@ body {
         background: pink;
     }
 
-           
+
+.footer {
+    text-align: center;
+    bottom: 0;
+    background: #B8C2FD;
+}
+         
+
+@media(max-width: l700px){
+    #text{
+        font-size: 20px;
+    }
+    .header ul li{
+        display: block;
+    }
+    .header{
+        position:absolute;
+        background: white;
+        height:100vh;
+        width:100vh;
+        top:0;
+        right:0;
+        text-align:left;
+        z-index:2;
+    }
+}
 /* 
 
         .
